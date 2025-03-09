@@ -20,7 +20,7 @@ public class ArmstrongNum {
 		while(temp>0) {
 			lastDigit=temp%10;
 			sum+=Math.pow(lastDigit, digits);
-			temp=temp/10;
+			temp=temp/10; //removes the lastdigit
 		}
 		if(sum==num) 
 		{
